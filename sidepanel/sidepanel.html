@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <title>CSS &amp; JS İnceleyici</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="logo">&lt;/&gt;</span>
+      <div class="brand-text">
+        <h1>CSS &amp; JS İnceleyici</h1>
+        <span id="pageUrl" class="url" title=""></span>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="pickBtn" class="btn primary">◎ Seçim Modu</button>
+      <button id="refreshBtn" class="btn icon" title="Yenile">⟳</button>
+    </div>
+  </header>
+
+  <section class="privacy-note" aria-label="Veri kullanımı ve site erişimi">
+    <p>Seçilen HTML, CSS ve JS verileri tarayıcınızda işlenir. Geliştiriciye gönderilmez.
+      <a href="../privacy.html" target="_blank" rel="noopener noreferrer">Gizlilik politikası</a></p>
+    <p id="recordingStatus" class="dim" aria-live="polite">Site erişimi kontrol ediliyor…</p>
+    <div class="access-actions">
+      <button id="earlyBtn" class="btn small" disabled>Bu sitede erken JS kaydını aç</button>
+      <button id="clearBtn" class="btn small">Verileri temizle</button>
+      <button id="revokeBtn" class="btn small">Verilen site izinlerini kaldır</button>
+    </div>
+  </section>
+
+  <section id="elementCard" class="card hidden">
+    <div id="breadcrumb" class="crumbs"></div>
+    <div class="summary-row">
+      <code id="elementSummary"></code>
+      <button id="copyHtmlBtn" class="link">HTML'i kopyala</button>
+    </div>
+    <details class="sub">
+      <summary>HTML</summary>
+      <pre id="elementHtml" class="code"></pre>
+    </details>
+    <details class="sub" id="attrsWrap">
+      <summary>Öznitelikler (<span id="attrCount">0</span>)</summary>
+      <div id="attrList" class="attrs"></div>
+    </details>
+  </section>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="css">CSS</button>
+    <button class="tab" data-tab="js">JS / Olaylar</button>
+    <button class="tab" data-tab="files">Dosyalar</button>
+  </nav>
+
+  <main id="content">
+    <div id="tab-css" class="tabpane active"></div>
+    <div id="tab-js" class="tabpane"></div>
+    <div id="tab-files" class="tabpane"></div>
+  </main>
+
+  <div id="emptyState" class="empty">
+    <div class="empty-icon">◎</div>
+    <p><b>Seçim Modu</b>nu açın ve sayfada incelemek istediğiniz öğeye tıklayın.</p>
+    <p class="dim">Paneli araç çubuğundaki eklenti simgesinden açın. İlk yüklemede eklenen JS olaylarını görmek için bu sitede erken kaydı açıp sayfayı yenileyin. ESC ile seçimden çıkabilirsiniz.</p>
+  </div>
+
+  <div id="status" class="status hidden" role="status"></div>
+  <div id="toast" class="toast hidden" role="status">Kopyalandı ✓</div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

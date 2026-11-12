@@ -1,0 +1,19 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #0e1119; color: #f4f6ff; font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 720px; padding: 60px 40px; margin: auto; }
+.eyebrow { color: #90aaff; font-size: 12px; letter-spacing: 3px; font-weight: 700; }
+h1 { font-size: clamp(38px, 5vw, 64px); line-height: 1.05; letter-spacing: -2px; margin: 22px 0; }
+main > p { color: #a6b0c8; max-width: 540px; }
+.demo-card { position: relative; padding: 32px; margin-top: 34px; border: 1px solid #35416a; border-radius: 20px; background: linear-gradient(135deg, #1a2340, #141a2a); }
+.demo-card::before { content: ""; position: absolute; width: 48px; height: 3px; top: -2px; left: 32px; background: #8ca8ff; }
+.card-index { color: #8faaff; font: 11px ui-monospace, monospace; letter-spacing: 2px; }
+h2 { font-size: 26px; margin-bottom: 8px; }
+.demo-card p { color: #b4bed7; }
+.demo-button { display: flex; gap: 40px; align-items: center; background: #8faaff; color: #11182c; border: 0; border-radius: 10px; padding: 14px 20px; font: 700 14px system-ui, sans-serif; cursor: pointer; transition: transform .2s, background .2s; }
+.demo-button:hover { background: #c0cfff; transform: translateY(-2px); }
+.demo-button:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.demo-button::after { content: "JS"; background: #233563; color: #d7e1ff; padding: 2px 5px; border-radius: 4px; font-size: 9px; }
+output { display: block; color: #97a6c6; font-size: 12px; margin-top: 18px; }
+.footnote { font-size: 12px; margin-top: 24px; }
+@media (max-width: 600px) { main { padding: 36px 24px; } .demo-card { padding: 24px; } }

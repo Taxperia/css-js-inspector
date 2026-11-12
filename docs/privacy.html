@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gizlilik Politikası — CSS &amp; JS İnceleyici</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { max-width: 780px; margin: 48px auto; padding: 0 24px 60px; font: 16px/1.7 system-ui, sans-serif; }
+    h1 { line-height: 1.2; } h2 { margin-top: 32px; font-size: 21px; }
+    a { color: #4388ee; } .meta { opacity: .7; } li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h1>CSS &amp; JS İnceleyici<br>Gizlilik Politikası</h1>
+  <p class="meta">Yayıncı: Taxperia · Sürüm: 1.1.0 · Güncelleme: 12 Kasım 2026</p>
+  <p>Bu eklentinin tek amacı, kullanıcının incelediği web sayfasının HTML, CSS ve JavaScript kaynaklarını yan panelde göstermektir. İnceleme verileri kullanıcının tarayıcısında işlenir. Geliştiriciye ait bir sunucuya gönderilmez; reklam, analitik, telemetri veya kullanıcı hesabı bulunmaz.</p>
+
+  <h2>İşlenen veriler</h2>
+  <ul>
+    <li>İncelenen sekmenin URL'si; seçilen öğenin HTML'si, öznitelikleri, sınıfları, boyutları, CSS kuralları ve hesaplanan stilleri.</li>
+    <li>Kaydedilebilen olay dinleyicilerinin türleri, fonksiyon kaynak metinleri ve kayıt anındaki kaynak dosya/satır bilgileri; sayfadaki inline olay tanımları ve erişilebilen jQuery kayıtları.</li>
+    <li>Sayfanın CSS/JS kaynak adresleri, inline kaynak metinleri ve kullanıcı izin verdiyse harici kaynak dosyalarının metinleri.</li>
+  </ul>
+  <p>Sayfa içeriği kişisel veya hassas bilgiler barındırabilir. Eklenti bunları sınıflandırmaz; seçilen HTML'de, özniteliklerde veya kaynak metinlerinde bulunan bilgiler inceleme sırasında panelde görünebilir. Tuş vuruşlarının veya olayların içerikleri kaydedilmez; çerez API'si, tarayıcı geçmişi API'si, mikrofon ve kamera kullanılmaz.</p>
+
+  <h2>Çalışma ve izinler</h2>
+  <p>Varsayılan inceleme, araç çubuğundaki eklenti simgesine tıklanmasıyla etkin sekmede başlar. Kurulumda tüm sitelere kalıcı erişim verilmez. “Bu sitede erken JS kaydını aç” seçildiğinde Chrome yalnızca seçilen protokol ve ana bilgisayar için erişim izni ister. Chrome'un eşleşme kalıpları aynı ana bilgisayarın tüm yollarını ve portlarını kapsar.</p>
+  <p>Erken kayıt açık olan sitelerin üst çerçevesinde, sonraki sayfa yüklemelerinden itibaren olay dinleyicisi tanımları sayfa açılırken belleğe kaydedilir; bunun için panelin açık olması gerekmez. Kayıtlar bu sayfanın ömrüyle sınırlıdır. Diğer sitelerde inceleme kodu otomatik çalışmaz. Harici CSS/JS kaynaklarına erişim ayrıca kullanıcı eylemiyle ve ilgili kaynak sitesi için istenir.</p>
+
+  <h2>Ağ istekleri ve paylaşım</h2>
+  <p>Harici dosya görüntülemek veya izin verilen CSS kurallarını tamamlamak için kaynak dosyanın adresine GET isteği yapılır. İlgili kaynak sunucusu normal ağ bağlantısında görülen IP adresi, istenen kaynak URL'si ve tarayıcının gönderdiği teknik ağ başlıklarını görebilir. Eklenti bu isteklere oturum çerezi veya HTTP kimlik bilgisi eklemez ve Referer başlığını göndermez. URL içinde kullanıcı adı/parola içeren kaynaklar reddedilir. Kaynak adresinin sorgu parametreleri dosyayı doğru getirebilmek için korunur.</p>
+  <p>Yönlendirmeler takip edilmez. HTTPS kaynakları şifreli bağlantıyla getirilir; HTTP kaynakları şifrelenmemiştir. İndirilen JS yalnızca metin olarak gösterilir, eklenti tarafından çalıştırılmaz. Eklenti geliştiricisi inceleme verilerini almaz, satmaz veya üçüncü taraflara aktarmaz. Kopyalama ve indirme yalnızca kullanıcının isteğiyle panoya veya seçtiği dosyaya yapılır.</p>
+  <p>Gizlilik, proje veya destek bağlantılarını açtığınızda GitHub'ın kendi gizlilik politikası geçerlidir. Destek için herkese açık bir GitHub konusu oluşturursanız gönderdiğiniz içerik herkese görünür; sayfa içeriklerini veya gizli bilgilerinizi paylaşmanız gerekmez.</p>
+
+  <h2>Saklama ve silme</h2>
+  <p>İnceleme verileri disk, senkronizasyon deposu veya geliştirici veritabanına yazılmaz. Dosya metni önbelleği sayfa başına en fazla dört dosyadır; her indirme en fazla 2 MiB ve 12 saniye ile sınırlıdır. Paneldeki “Verileri temizle” mevcut panel ve sayfa inceleme verilerini temizler; siteyi yenilemek sayfanın tüm kayıtlarını kaldırır. Kullanıcının kopyaladığı veya indirdiği içerikler, kullanıcı silene kadar panoda veya dosya sisteminde kalabilir.</p>
+  <p>Chrome, verilen site izinlerini ve erken kayıt için seçilen site ayarlarını sonraki oturumlar için saklar. “Verilen site izinlerini kaldır” düğmesi veya Chrome'un eklenti ayarları kalıcı erişimleri kaldırır. Erken kaydı kapattıktan veya izni kaldırdıktan sonra, açık sayfalardaki kaydı durdurmak için ilgili sayfaları yenileyin. Eklentiyi kaldırmak eklenti ayarlarını ve izinlerini de kaldırır.</p>
+
+  <h2>Sınırlı kullanım taahhüdü</h2>
+  <p>CSS &amp; JS İnceleyici, Chrome API'lerinden ve incelenen sayfalardan erişilen bilgilerin kullanımında Chrome Web Mağazası Kullanıcı Verileri Politikası'na ve Sınırlı Kullanım (Limited Use) gerekliliklerine uyar. Veriler yalnızca açıklanan sayfa inceleme işlevi için kullanılır; reklam, profilleme, satış veya kredi değerlendirmesi amacıyla kullanılmaz.</p>
+
+  <h2>İletişim ve değişiklikler</h2>
+  <p>Sorularınız için <a href="https://github.com/Taxperia/css-js-inspector/issues" rel="noopener noreferrer">projenin GitHub destek sayfasını</a> kullanabilirsiniz. Veri işleme davranışı değişirse bu politika sürüm ve tarih bilgisiyle güncellenir.</p>
+
+  <h2 lang="en">English summary</h2>
+  <p lang="en">CSS &amp; JS Inspector processes the inspected page's URL, selected HTML, CSS rules, JavaScript listener source text and resource files locally in the browser. No inspected data is sent to the developer; there are no analytics, ads, accounts or developer-operated servers. By default, inspection starts after the user invokes the extension. Optional host permissions enable early listener recording only on selected hosts or text retrieval from resource hosts. Those servers receive normal network request metadata; extension fetches omit cookies, HTTP credentials and referrers and reject redirects. Resource query parameters are preserved. HTTP resources are not encrypted. Inspected data stays in memory unless the user copies or downloads it. Clear inspection data, reload pages, revoke site permissions or uninstall the extension to remove the corresponding data and settings. The extension complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Support is available through the project's public GitHub Issues page.</p>
+</body>
+</html>
